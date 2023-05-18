@@ -1,0 +1,212 @@
+html, body {
+      min-height: 100%;
+      }
+      body, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      }
+      body {
+    
+      background-size: contain;
+      }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #000;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: contain;
+      padding: 25px;
+      padding-bottom: 0px;
+      background: rgb(255, 255, 255); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      background: rgb(255, 255, 255); 
+      }
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #000000;
+      }
+      input::placeholder {
+      color: #000000;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: black; 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background-color: rgba(128, 128, 128, 0.251);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #000000;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background-color: rgba(128, 128, 128, 0.893);
+
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+      }
+
+      textarea {
+        background-color: rgba(128, 128, 128, 0.251);
+        border-radius: 5px;
+        border: none;
+        color: #000000;
+      }
+
+
+/* SECTION 4 */
+      .section4{
+        background-color: var(--White);
+    }
+    
+    .section4 .row{
+        min-height: 500px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .section4 .col{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+    }
+    
+    .section4 .heading{
+        padding: 5%;
+        padding-bottom: 50px;
+    }
+    
+    .section4 h1{
+        color: var(--RoyalBlue);
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    .section4 h1 .bigger_h1{
+        color: var(--RoyalBlue);
+        font-weight: 700;
+        font-size: 50px;
+    }
+    
+    .section4 h2 {
+        margin-bottom: 30px;
+        font-weight: 550;
+        font-size: 40px;
+    }
+    
+    .project{
+        width: 100%;
+        color: var(--White);
+        font-size: 26px;
+    }
+    
+    .r{
+        text-align: right;
+    }
+    
+    .l{
+        text-align: left;
+    }
+    
+    .r1{background-color: var(--PersianBlue);}
+    .r2{background-color: var(--RoyalBlue);}
+    .r3{background-color: var(--GreenBlue);}
+    .r4{
+        background-color: var(--Aero);
+        color: var(--RoyalBlue);
+    }
+    
+    .img1{
+        background: url("/Images/How\ plastic\ pollution\ threatens\ our\ health\,\ food\ systems\,\ and\ civilization\ itself.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .img2{
+        background: url('/Images/Man\ collects\ packages\ from\ the.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .img3{
+        background: url('/Images/Sea\ Turtle\ _\ Species\ _\ WWF.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .img4{
+        background: url('/Images/project\ risacca\ recycles\ fishing\ nets\ into\ pieces\ of\ ethical\ fashion\ &\ sustainable\ design.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
