@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .section-calculate{
+            min-height: 600px;
+        }
+
+        .input-group{
+            width: 600px;
+        }
+        .input-group-text{
+            width: 200px;
+            justify-content: left;
+        }
+
+        .btn{
+            color: #FFFFFF;
+            width: 200px;
+            background-color: #06BEE1;
+        }
+
+        .btn:hover{
+            color: black;
+            background-color: #2541B2;
+        }
+    </style>
+    <script>
+        const daftar_id = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+
+        function Report(){
+            var report = document.getElementById("report");
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            report.innerHTML = '<div class= "container rounded-5 p-4" style = "background-color : #FFFFFF";><b>Thanks for the response!</b><p>The following are your respond :<br> Name : ' + name + ' <br> Email : ' + email + '<br> My Message : </p>' + message + "</div";
+        }
+
+        function Calculate(){
+            var jumlah = 0;
+            for (var i = 0 ; i < daftar_id.length ; i++){
+                jumlah += +document.getElementById(daftar_id[i]).value;
+            }
+            var result = document.getElementById("result");
+            jumlah *= 365
+            result.innerHTML = '<p>Sampah yang anda hasilkan per-tahunnya adalah sebanyak:</p><h2>' + jumlah + '</h2>'
+        }
+
+        function Yearly(){
+            var tahun = document.getElementById("tahun");
+            var satu = document.getElementById("1");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlya(){
+            var tahun = document.getElementById("tahun2");
+            var satu = document.getElementById("2");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlyb(){
+            var tahun = document.getElementById("tahun3");
+            var satu = document.getElementById("3");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlyc(){
+            var tahun = document.getElementById("tahun4");
+            var satu = document.getElementById("4");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlyd(){
+            var tahun = document.getElementById("tahun5");
+            var satu = document.getElementById("5");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlye(){
+            var tahun = document.getElementById("tahun6");
+            var satu = document.getElementById("6");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlyf(){
+            var tahun = document.getElementById("tahun7");
+            var satu = document.getElementById("7");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlyg(){
+            var tahun = document.getElementById("tahun8");
+            var satu = document.getElementById("8");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlyh(){
+            var tahun = document.getElementById("tahun9");
+            var satu = document.getElementById("9");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        function Yearlyi(){
+            var tahun = document.getElementById("tahun10");
+            var satu = document.getElementById("10");
+            tahun.innerHTML = Number(satu.value)*365;
+        }
+        
+    </script>
+</head>
+<body>
+<div class="section-calculate p-3">
+    <h1 class="h1 text-center mt-3 mb-0">Kalkulator Sampah Plastik</h1>
+            <p class="text-center mt-0 pt-0 mb-3">Kira - kira berapa banyak sampah plastik yang anda kumpulkan dalam setahun ?</p>
+            <div class="container-sampah m-0 p-0" id="container-sampah">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1" style="justify-content: center;"></span>
+                    <span class="input-group-text" id="basic-addon1" style="justify-content: center;">/Day</span>
+                    <span class="input-group-text" id="basic-addon1" style="justify-content: center;">/Year</span>
+                    
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Plastic Bottles</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="1">
+                    <span class="input-group-text" id="tahun"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Plastic Cups</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="2">
+                    <span class="input-group-text" id="tahun2"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Straws</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="3">
+                    <span class="input-group-text" id="tahun3"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Cotton Swabs</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="4">
+                    <span class="input-group-text" id="tahun4"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Cigarette Butts</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="5">
+                    <span class="input-group-text" id="tahun5"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Plastic Resealable Bags</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="6">
+                    <span class="input-group-text" id="tahun6"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Plastic Cling Wrap</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="7">
+                    <span class="input-group-text" id="tahun7"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Plastic Silverware</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="8">
+                    <span class="input-group-text" id="tahun8"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Plastic Stirrers</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="9">
+                    <span class="input-group-text" id="tahun9"></span>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Food Containers</span>
+                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="10">
+                    <span class="input-group-text" id="tahun10"></span>
+                </div>
+            </div>
+            <button type="button" class="btn rounded m-2" onclick="Calculate(); Yearly(); Yearlya(); Yearlyb(); Yearlyc(); Yearlyd(); Yearlye(); Yearlyf(); Yearlyg(); Yearlyh(); Yearlyi();">Calculate</button>
+            <div class="result" id="result"></div>
+</div>
+</body>
+</html>
